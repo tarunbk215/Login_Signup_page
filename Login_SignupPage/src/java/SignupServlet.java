@@ -15,7 +15,7 @@ public class SignupServlet extends HttpServlet {
 
         // Database connection details
         String dbURL = "jdbc:oracle:thin:@localhost:1521:xe"; // Your Oracle database URL
-        String dbUsername = "tarun";  // Your Oracle database username
+        String dbUsername = "XYZ";  // Your Oracle database username
         String dbPassword = "abc";  // Your Oracle database password
 
         Connection conn = null;
@@ -62,3 +62,4 @@ public class SignupServlet extends HttpServlet {
         }
     }
 }
+
