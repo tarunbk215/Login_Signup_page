@@ -14,8 +14,8 @@ public class LoginServlet extends HttpServlet {
 
         // Database ka connect madak
         String dbURL = "jdbc:oracle:thin:@localhost:1521:xe";  // SID = 'xe' (oracle dag)
-        String dbUsername = "tarun";  //Oracle database username
-        String dbPassword = "abc";  //Oracle database password
+        String dbUsername = "XYZ";  //Your Oracle database username
+        String dbPassword = "abc";  //Your Oracle database password
 
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
             rs = stmt.executeQuery();
             
             if (rs.next()) {
-                response.sendRedirect("https://tarunbk21.github.io/imdb/");
+                response.sendRedirect("#any websites...");
             } else {
                 response.sendRedirect("signup.html");
             }
@@ -56,3 +56,4 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+
